@@ -1,16 +1,17 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import type {PropsWithChildren} from 'react';
 import {SafeAreaView, Text} from 'react-native';
+import {AppStack} from './src/navigator';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-function App(): React.JSX.Element {
+const App: React.FC = () => {
   return (
     <NavigationContainer>
-      <SafeAreaView>
-        <Text className="text-3xl text-black">메인</Text>
-      </SafeAreaView>
+      <SafeAreaProvider>
+        <AppStack />
+      </SafeAreaProvider>
     </NavigationContainer>
   );
-}
+};
 
 export default App;
