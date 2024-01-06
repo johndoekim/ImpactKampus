@@ -4,6 +4,7 @@ import {
   createNativeStackNavigator,
 } from '@react-navigation/native-stack';
 import AuthStack from './Stacks/AuthStack/AuthStack';
+import {MainScreen} from '../screen/Main/MainScreen';
 
 export type AppStackParamList = {
   authStack: undefined;
@@ -29,10 +30,9 @@ const {Screen, Navigator} = createNativeStackNavigator<AppStackParamList>();
 const AppStack: React.FC = () => {
   return (
     <>
-      <Navigator
-        initialRouteName="authStack"
-        screenOptions={{headerShown: false}}>
+      <Navigator initialRouteName="main" screenOptions={{headerShown: false}}>
         <Screen name="authStack" component={AuthStack} />
+        <Screen name="main" component={MainScreen} />
       </Navigator>
     </>
   );
