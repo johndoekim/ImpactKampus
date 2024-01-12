@@ -12,13 +12,14 @@ export const MainScreen: React.FC = () => {
         {/* 미션 봉투 영역 */}
         <View className="items-center shadow ">
           <TouchableOpacity onPress={() => console.log('메일 클릭')}>
+            {/*             
             <Image
               className="rounded-2xl shadow-2xl"
               style={{width: 192, height: 131}}
               source={require('../../../assets/Images/waxSealedMail.png')}
-            />
+            /> */}
 
-            {/* <EntypoIcon name="mail" size={192} color="#bca08d" /> */}
+            <EntypoIcon name="mail" size={192} color="#bca08d" />
           </TouchableOpacity>
         </View>
         {/* 미션 버튼 영역 */}

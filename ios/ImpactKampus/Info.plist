@@ -4,6 +4,24 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>impactKampus</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+			<string>impactKampus</string>
+			</array>
+	</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+  	<string>naversearchapp</string>
+  	<string>naversearchthirdlogin</string>
+	</array>
 	<key>CFBundleDisplayName</key>
 	<string>ImpactKampus</string>
 	<key>CFBundleExecutable</key>
@@ -22,6 +40,14 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>KAKAO_APP_KEY</key>
+	<string>7f060ecaca1c93277f022268c2f6a819</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>kakao7f060ecaca1c93277f022268c2f6a819</string>
+		<string>kakaolink</string>
+		<string>kakaokompassauth</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

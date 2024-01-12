@@ -30,7 +30,9 @@ const {Screen, Navigator} = createNativeStackNavigator<AppStackParamList>();
 const AppStack: React.FC = () => {
   return (
     <>
-      <Navigator initialRouteName="main" screenOptions={{headerShown: false}}>
+      <Navigator
+        initialRouteName="authStack"
+        screenOptions={{headerShown: false}}>
         <Screen name="authStack" component={AuthStack} />
         <Screen name="main" component={MainScreen} />
       </Navigator>
