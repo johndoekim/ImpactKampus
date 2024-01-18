@@ -7,6 +7,13 @@ import NaverLogin, {
   GetProfileResponse,
 } from '@react-native-seoul/naver-login';
 
+import {
+  GoogleSignin,
+  GoogleSigninButton,
+  statusCodes,
+} from '@react-native-google-signin/google-signin';
+import {useEffect} from 'react';
+
 const LoginScreen: React.FC = () => {
   const naverlogin = async () => {
     const consumerKey = 'ggx4fjxjcjcKmOMSPVxd';
@@ -24,11 +31,27 @@ const LoginScreen: React.FC = () => {
     console.log('naver', failureResponse);
   };
 
-  const login = () => {
+  useEffect(() => {
+    GoogleSignin.configure({
+      webClientId:
+        '371595956198-tbii8b0omdd85p02h5vnhhfaq7jkoho3.apps.googleusercontent.com',
+    });
+  }, []);
+
+  const googlesignIn = async () => {
+    await GoogleSignin.hasPlayServices({showPlayServicesUpdateDialog: true});
+    const {idToken, serverAuthCode} = await GoogleSignin.signIn();
+
+    console.log('idToekn : ', idToken);
+
+    console.log('serverAuthCode : ', serverAuthCode);
+  };
+
+  const kakaologin = () => {
     KakaoLogin.login()
       .then(result => {
         console.log('kakao Login Success', JSON.stringify(result));
-        getProfile();
+        kakaogetProfile();
       })
       .catch(error => {
         if (error.code === 'E_CANCELLED_OPERATION') {
@@ -39,7 +62,7 @@ const LoginScreen: React.FC = () => {
       });
   };
 
-  const getProfile = () => {
+  const kakaogetProfile = () => {
     KakaoLogin.getProfile()
       .then(result => {
         console.log('GetProfile Success', JSON.stringify(result));
@@ -53,7 +76,7 @@ const LoginScreen: React.FC = () => {
     <SafeAreaView className="flex h-full bg-Almondpeach">
       <View className="flex-1 justify-center">
         <View className="flex items-center">
-          <TouchableOpacity className="mb-3" onPress={() => login()}>
+          <TouchableOpacity className="mb-3" onPress={() => kakaologin()}>
             <Image
               className="rounded-xl"
               source={require('../../../assets/Icons/Auth/Kakao/kakao_ko_login_medium_narrow.png')}
@@ -73,9 +96,7 @@ const LoginScreen: React.FC = () => {
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity
-            className="mb-3"
-            onPress={() => console.log('구글 로그인')}>
+          <TouchableOpacity className="mb-3" onPress={() => googlesignIn()}>
             <GoogleLogin />
           </TouchableOpacity>
         </View>

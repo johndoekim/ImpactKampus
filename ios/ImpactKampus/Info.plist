@@ -4,24 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>impactKampus</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-			<string>impactKampus</string>
-			</array>
-	</dict>
-	</array>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-  	<string>naversearchapp</string>
-  	<string>naversearchthirdlogin</string>
-	</array>
 	<key>CFBundleDisplayName</key>
 	<string>ImpactKampus</string>
 	<key>CFBundleExecutable</key>
@@ -38,6 +20,27 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>ImpactKampus</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.371595956198-tbii8b0omdd85p02h5vnhhfaq7jkoho3</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>impactKampus</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>KAKAO_APP_KEY</key>
