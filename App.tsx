@@ -1,16 +1,19 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import type {PropsWithChildren} from 'react';
 import {SafeAreaView, Text} from 'react-native';
+import {AppStack} from './src/navigator';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import 'react-native-gesture-handler';
+import DrawerNavigator from './src/navigator/DrawerNavigator';
 
-function App(): React.JSX.Element {
+const App: React.FC = () => {
   return (
     <NavigationContainer>
-      <SafeAreaView>
-        <Text className="text-3xl text-black">메인</Text>
-      </SafeAreaView>
+      <SafeAreaProvider>
+        <DrawerNavigator />
+      </SafeAreaProvider>
     </NavigationContainer>
   );
-}
+};
 
 export default App;
