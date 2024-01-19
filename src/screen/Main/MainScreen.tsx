@@ -4,9 +4,8 @@ import {Avatar} from '../../component/Common/Avatar';
 
 export const MainScreen: React.FC = () => {
   return (
-    // 터쳐블 오패시티를 전체에 걸고 토글을 이용해서 토글 바깥을 누르면 토글이 꺼지게 만들면 될듯
     <SafeAreaView className="h-full bg-Almondpeach">
-      <View className="flex top-8 z-[1] flex-row">
+      <View className="flex top-8 flex-row">
         <View>
           <Avatar />
         </View>
