@@ -1,19 +1,19 @@
-import {Text, View} from 'react-native';
+import {useState} from 'react';
+import {Text, TextInput, View} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-type MissionPaperProps = {
-  nickname: string;
-  title: string;
-  content: string;
-  time: string;
+type PostMissionPaperProps = {
+  nickname?: string;
+  time?: string;
 };
 
-export const MissionPaper: React.FC<MissionPaperProps> = ({
+export const PostMissionPaper: React.FC<PostMissionPaperProps> = ({
   nickname,
-  title,
-  content,
   time,
 }) => {
+  const [title, setTitle] = useState<string>('');
+  const [content, setContent] = useState<string>('');
+
   return (
     <>
       <View className="bg-HoneyYellow w-80 h-96">
@@ -41,8 +41,17 @@ export const MissionPaper: React.FC<MissionPaperProps> = ({
         <View className="mx-2 border-x-2 border-b-2 h-64 border-Blueberry">
           <View className="mx-2 mt-2">
             <Text className="text-xl text-Blueberry">TO {nickname}</Text>
-            <Text className="mt-4 text-lg text-Blueberry">{title}</Text>
-            <Text className="mt-2 text-Blueberry">{content}</Text>
+            <TextInput
+              className="mt-4 text-lg text-Blueberry"
+              placeholder="제목"
+              placeholderTextColor={'#2C333E'}
+            />
+            <TextInput
+              className="mt-3 text-Blueberry"
+              multiline={true}
+              placeholder="내용"
+              placeholderTextColor={'#2C333E'}
+            />
             <Text className="text-lg mt-10 text-Blueberry">
               제한 시간 : {time}
             </Text>

@@ -1,8 +1,19 @@
-import {SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
+import {
+  SafeAreaView,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {Avatar} from '../../component/Common/Avatar';
-import {MissionPaper} from '../../component/Mission/MissonPaper';
+import {PostMissionPaper} from '../../component/Mission/PostMissionPaper';
+import {useState} from 'react';
 
 export const SuggestMissionScreen: React.FC = () => {
+  const dummyData = {
+    nickname: 'Anonymous',
+    time: '2024-01-26-14:23',
+  };
   return (
     <>
       <SafeAreaView className="h-full bg-Almondpeach">
@@ -10,7 +21,10 @@ export const SuggestMissionScreen: React.FC = () => {
           <Avatar />
         </View>
         <View className='flex items-center top-20 justify-center"'>
-          <MissionPaper />
+          <PostMissionPaper
+            nickname={dummyData.nickname}
+            time={dummyData.time}
+          />
           <View className="mt-5">
             <TouchableOpacity
               className="bg-Quicksand w-40 rounded-xl items-center"
