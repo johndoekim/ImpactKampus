@@ -13,8 +13,23 @@ import {
   statusCodes,
 } from '@react-native-google-signin/google-signin';
 import {useEffect} from 'react';
+import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {AppStackParamList} from '../../navigator/AppStack';
+import Toast from 'react-native-toast-message';
 
 const LoginScreen: React.FC = () => {
+  const StackNavi =
+    useNavigation<NativeStackNavigationProp<AppStackParamList>>();
+
+  const showToast = () => {
+    Toast.show({
+      type: 'success',
+      text1: '성공',
+      text2: '로그인 성공 !',
+    });
+  };
+
   const naverlogin = async () => {
     const consumerKey = 'ggx4fjxjcjcKmOMSPVxd';
     const consumerSecret = 'R7dUXdx8CB';
@@ -52,6 +67,8 @@ const LoginScreen: React.FC = () => {
       .then(result => {
         console.log('kakao Login Success', JSON.stringify(result));
         kakaogetProfile();
+        StackNavi.navigate('main');
+        showToast();
       })
       .catch(error => {
         if (error.code === 'E_CANCELLED_OPERATION') {

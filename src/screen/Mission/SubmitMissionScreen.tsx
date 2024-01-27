@@ -9,8 +9,9 @@ import {Avatar} from '../../component/Common/Avatar';
 import {PostMissionPaper} from '../../component/Mission/PostMissionPaper';
 import {useState} from 'react';
 import Toast from 'react-native-toast-message';
+import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 
-export const SuggestMissionScreen: React.FC = () => {
+export const SubmitMissionScreen: React.FC = () => {
   const dummyData = {
     nickname: 'Anonymous',
     time: '2024-01-26-14:23',
@@ -19,8 +20,8 @@ export const SuggestMissionScreen: React.FC = () => {
   const showToast = () => {
     Toast.show({
       type: 'success',
-      text1: '성공',
-      text2: '결과를 기대하세요 👋',
+      text1: '제출 성공',
+      text2: '심사를 기다려주세요',
     });
   };
   return (
@@ -34,16 +35,20 @@ export const SuggestMissionScreen: React.FC = () => {
             nickname={dummyData.nickname}
             time={dummyData.time}
           />
-          <View className="mt-5">
+          <View className="mt-2">
+            <View className="items-center mb-2">
+              <FontAwesomeIcon name="photo" size={72} color="#bca08d" />
+            </View>
+
             <TouchableOpacity
               className="bg-Quicksand w-40 rounded-xl items-center"
               onPress={showToast}>
               <Text
                 className="text-Pristine
-            text-3xl 
-            font-medium
-            my-1.5">
-                미션 생성
+              text-3xl 
+              font-medium
+              my-1.5">
+                미션 제출
               </Text>
             </TouchableOpacity>
           </View>

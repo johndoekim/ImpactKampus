@@ -55,7 +55,7 @@ export const OnOpenAvatar: React.FC<DrawerContentComponentProps> = () => {
 
           <TouchableOpacity
             className="flex-row items-center mt-4"
-            onPress={() => console.log('로그아웃')}>
+            onPress={() => StackNavi.navigate('authStack')}>
             <AntDesign name="logout" size={30} color="#A78C7B" />
             <Text className="text-xl shadow-md ml-2">로그아웃</Text>
           </TouchableOpacity>
