@@ -1,6 +1,6 @@
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {AppStack} from '.';
-import {OnOpenAvatar} from '../component/Common/Avatar';
+import {OnOpenAvatar} from '../component/Common/OnOpenAvatar';
 
 const Drawer = createDrawerNavigator();
 
