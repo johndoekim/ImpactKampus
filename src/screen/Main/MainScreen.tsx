@@ -27,7 +27,6 @@ export const MainScreen: React.FC = () => {
         </View>
         {/* 미션 버튼 영역 */}
         <View className="mt-5">
-          {/*           
           <TouchableOpacity
             className="bg-Quicksand w-40 rounded-xl items-center "
             onPress={() => StackNavi.navigate('getMission')}>
@@ -51,8 +50,8 @@ export const MainScreen: React.FC = () => {
             my-1.5">
               미션 생성
             </Text>
-          </TouchableOpacity> */}
-
+          </TouchableOpacity>
+          {/* 
           <TouchableOpacity
             className="bg-Quicksand mt-3 w-40 rounded-xl items-center "
             onPress={() => StackNavi.navigate('submitMission')}>
@@ -64,7 +63,7 @@ export const MainScreen: React.FC = () => {
             my-1.5">
               미션 제출
             </Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       </View>
     </SafeAreaView>
