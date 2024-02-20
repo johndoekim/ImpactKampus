@@ -22,6 +22,8 @@ module.exports = {
         Almondine: '#A78C7B',
         Almondpeach: '#D8C8BD',
         Quicksand: '#bca08d',
+        MainBg: '#FFF8DC',
+        AvatarBg: '#FFE16A',
       },
     },
   },

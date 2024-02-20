@@ -30,8 +30,8 @@ export const GetMissionScreen: React.FC = () => {
 
   return (
     <>
-      <SafeAreaView className="h-full bg-Almondpeach">
-        <View className="flex top-8 flex-row">
+      <SafeAreaView className="h-full bg-MainBg">
+        <View className="flex justify-end mr-6 top-8 flex-row">
           <Avatar />
         </View>
         <View className='flex items-center top-20 justify-center"'>
