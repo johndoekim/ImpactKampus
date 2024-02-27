@@ -17,6 +17,7 @@ import {
 import {DrawerParamList} from '../../navigator/DrawerNavigator';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {AppStackParamList} from '../../navigator/AppStack';
+import AvatarIcon from '../../../assets/Icons/Etc/AvatarIcon.svg';
 
 type DrawerNavProp = DrawerNavigationProp<DrawerParamList>;
 
@@ -29,8 +30,8 @@ export const Avatar: React.FC = () => {
 
   return (
     <View>
-      <TouchableOpacity className="ml-4 z-[1]" onPress={() => toggleAvatar()}>
-        <Ionicons name="person-circle" size={70} color="#A78C7B" />
+      <TouchableOpacity className="z-[1]" onPress={() => toggleAvatar()}>
+        <AvatarIcon />
       </TouchableOpacity>
     </View>
   );

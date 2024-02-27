@@ -1,61 +1,61 @@
-import {useState} from 'react';
-import {Text, TextInput, View} from 'react-native';
+import {Image, Text, TextInput, View} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Seal from '../../../assets/Icons/Mission/Seal.svg';
 
 type PostMissionPaperProps = {
-  nickname?: string;
-  time?: string;
+  nickname: string;
+  time: string;
 };
 
 export const PostMissionPaper: React.FC<PostMissionPaperProps> = ({
   nickname,
   time,
 }) => {
-  const [title, setTitle] = useState<string>('');
-  const [content, setContent] = useState<string>('');
-
   return (
     <>
-      <View className="bg-HoneyYellow w-80 h-96">
-        <View className="items-center mt-2 mx-2 border-x-2 border-t-2 border-Blueberry">
-          <Text className="text-Blueberry text-3xl font-extrabold">
-            R A D I O G R A M
-          </Text>
-          <Text className="text-Blueberry font-semibold">
-            STANDARD AIR LINES INC.
-          </Text>
-        </View>
-        <View className="justify-between flex-row mx-2 border-t-2 border-b-2 border-Blueberry">
-          <View className="w-24 h-14 border-x-2 border-Blueberry">
-            <Text className="font-light text-xs mx-1 mt-1 italic text-center text-Blueberry">
-              RADIOGRAMS TO ALL PARTS of the WORLD
+      <View className="bg-white w-[345px] h-[400px] rounded border-[1px] border-[#DBD2B5] shadow-md shadow-[#DBD2B5]">
+        <View className="ml-8 mt-6">
+          <View className="flex-row items-center">
+            <Text className="text-[16px] font-NanumSquare text-MissionTextCol">
+              수신자
+            </Text>
+            <Text className="text-[16px] font-Orbit text-MissionCol ml-8">
+              {nickname}
             </Text>
           </View>
-          <Ionicons name="earth" size={54} color="#2C333E" />
-          <View className="w-24 h-14 border-x-2 border-Blueberry">
-            <Text className="font-light text-xs mx-1 mt-1 italic text-center text-Blueberry">
-              SHIP TO SHORE SHORE TO SHIP
+          <View className="flex-row items-center my-2">
+            <Text className="text-[16px] font-NanumSquare text-MissionTextCol">
+              미션 기한
+            </Text>
+            <Text className="text-[16px] font-Orbit text-MissionCol ml-3.5">
+              {time}
             </Text>
           </View>
-        </View>
-        <View className="mx-2 border-x-2 border-b-2 h-64 border-Blueberry">
-          <View className="mx-2 mt-2">
-            <Text className="text-xl text-Blueberry">TO {nickname}</Text>
+          <View className="flex-row items-center">
+            <Text className="text-[16px] font-NanumSquare text-MissionTextCol">
+              제목
+            </Text>
             <TextInput
-              className="mt-4 text-lg text-Blueberry"
-              placeholder="제목"
-              placeholderTextColor={'#2C333E'}
+              className="text-[16px] font-Orbit text-MissionCol ml-12"
+              placeholder="제목을 입력하세요"
+              placeholderTextColor={'#89836C'}
             />
-            <TextInput
-              className="mt-3 text-Blueberry"
-              multiline={true}
-              placeholder="내용"
-              placeholderTextColor={'#2C333E'}
-            />
-            <Text className="text-lg mt-10 text-Blueberry">
-              제한 시간 : {time}
-            </Text>
           </View>
+        </View>
+
+        <View className="items-center justify-center mx-12 mt-12">
+          <TextInput
+            className="text-xl text-center font-Orbit text-MissionCol"
+            placeholder="내용을 입력하세요"
+            multiline={true}
+            placeholderTextColor={'#89836C'}
+          />
+        </View>
+        <View className="-top-12 ml-auto">
+          <Image
+            source={require('../../../assets/Icons/Mission/Seal.png')}
+            style={{width: 142, height: 142}}
+          />
         </View>
       </View>
     </>

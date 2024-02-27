@@ -16,6 +16,8 @@
 		1EA13B302B4D1AC9006A8938 /* SwiftBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA13B2F2B4D1AC9006A8938 /* SwiftBridge.swift */; };
 		7699B88040F8A987B510C191 /* libPods-ImpactKampus-ImpactKampusTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ImpactKampus-ImpactKampusTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		052FC7DEADC04ABE83F6B1F9 /* NanumSquareRoundR.otf in Resources */ = {isa = PBXBuildFile; fileRef = 342A5D9E4B424D16B36FC649 /* NanumSquareRoundR.otf */; };
+		3E98DC8801734EB1B9E7E37C /* Orbit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28A8A97E44CF4E7EB202A232 /* Orbit-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ImpactKampus/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ImpactKampus-ImpactKampusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImpactKampus-ImpactKampusTests.release.xcconfig"; path = "Target Support Files/Pods-ImpactKampus-ImpactKampusTests/Pods-ImpactKampus-ImpactKampusTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		342A5D9E4B424D16B36FC649 /* NanumSquareRoundR.otf */ = {isa = PBXFileReference; name = "NanumSquareRoundR.otf"; path = "../assets/Fonts/NanumSquareRoundR.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		28A8A97E44CF4E7EB202A232 /* Orbit-Regular.ttf */ = {isa = PBXFileReference; name = "Orbit-Regular.ttf"; path = "../assets/Fonts/Orbit-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				7259FCDBEC6041C3A6D5674B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -155,6 +160,16 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		7259FCDBEC6041C3A6D5674B /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				342A5D9E4B424D16B36FC649 /* NanumSquareRoundR.otf */,
+				28A8A97E44CF4E7EB202A232 /* Orbit-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -252,6 +267,8 @@
 				1E7E3E9B2B5151EF0096AE71 /* GoogleService-Info.plist in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				052FC7DEADC04ABE83F6B1F9 /* NanumSquareRoundR.otf in Resources */,
+				3E98DC8801734EB1B9E7E37C /* Orbit-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
