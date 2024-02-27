@@ -24,9 +24,9 @@ export const MainScreen: React.FC = () => {
       {/* 미션  영역 */}
       {/* 미션 알림 */}
       <View className="top-28 items-center">
-        <Text className="text-[#3A3521] text-[24px] font-bold font-NanumSquare ">
+        {/* <Text className="text-[#3A3521] text-[24px] font-bold font-NanumSquare ">
           새로운 미션이 도착했어요!
-        </Text>
+        </Text> */}
       </View>
       <View className="flex items-center top-[180px] justify-center">
         {/* 미션 봉투 영역 */}
@@ -38,6 +38,7 @@ export const MainScreen: React.FC = () => {
           </TouchableOpacity>
         </View>
         {/* 미션 버튼 영역 */}
+
         <View className="mt-5">
           <TouchableOpacity
             className="items-center "
@@ -48,7 +49,9 @@ export const MainScreen: React.FC = () => {
             mt-10
             opacity-60
             text-[16px] font-NanumSquare">
-              편지를 눌러 미션을 확인해보세요
+              {/* 
+              편지를 눌러 미션을 확인해보세요 */}
+              미션 수행을 완료 했다면 결과를 제출해주세요
             </Text>
           </TouchableOpacity>
 
