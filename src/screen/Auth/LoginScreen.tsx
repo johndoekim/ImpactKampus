@@ -90,7 +90,7 @@ const LoginScreen: React.FC = () => {
   };
 
   return (
-    <SafeAreaView className="flex h-full bg-Almondpeach">
+    <SafeAreaView className="flex h-full bg-MainBg">
       <View className="flex-1 justify-center">
         <View className="flex items-center">
           <TouchableOpacity className="mb-3" onPress={() => kakaologin()}>
@@ -115,6 +115,12 @@ const LoginScreen: React.FC = () => {
 
           <TouchableOpacity className="mb-3" onPress={() => googlesignIn()}>
             <GoogleLogin />
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            className="mb-3"
+            onPress={() => StackNavi.navigate('main')}>
+            <Text>그냥 로그인</Text>
           </TouchableOpacity>
         </View>
       </View>
