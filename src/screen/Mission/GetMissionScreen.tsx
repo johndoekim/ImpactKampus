@@ -7,17 +7,17 @@ import X from '../../../assets/Icons/Mission/X.svg';
 export const GetMissionScreen: React.FC = () => {
   const dummyData = {
     nickname: 'JoneDoe',
-    title: 'What is Lorem Ipsum?',
+    title: '음식을 만들어봐요',
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    time: '2024-01-26-14:23',
+      '본인이 가장 좋아하는 음식을 만들고 혼자 먹어도 좋고, 친구와 함께 먹어도 좋아요.',
+    time: '2024-02-26-20:23',
   };
 
   const showToast = () => {
     Toast.show({
       type: 'success',
       text1: '수락',
-      text2: '이제 미션을 수행해 주세요 👋',
+      text2: '이제 미션을 수행해 주세요',
     });
   };
 
@@ -44,13 +44,14 @@ export const GetMissionScreen: React.FC = () => {
           />
           <View className="mt-12">
             <TouchableOpacity
-              className="bg-[#58533D] w-[345px] h-[60px] rounded-[8px] items-center flex-row justify-center"
+              className="bg-[#58533D] shadow-sm shadow-[#58533D] w-[345px] h-[60px] rounded-[8px] items-center flex-row justify-center"
               onPress={showToast}>
               <Check />
               <Text
                 className="text-[#FFF8DC]
             text-[20px]
             font-bold
+            font-NanumSquare
             my-4
             ml-2
             ">
@@ -58,14 +59,15 @@ export const GetMissionScreen: React.FC = () => {
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
-              className="bg-MainBg mt-2 w-[345px] h-[60px] rounded-[8px] border-2 border-[#58533D] items-center flex-row justify-center"
-              onPress={showToast}>
+              className="bg-MainBg shadow-md shadow-[#58533D] mt-2 w-[345px] h-[60px] rounded-[8px] border-2 border-[#58533D] items-center flex-row justify-center"
+              onPress={showToast2}>
               <X />
               <Text
-                className="text-[#FFF8DC]
+                className="
             text-[20px]
             text-[#58533D]
             font-bold
+            font-NanumSquare
             my-4
             ml-2
             ">

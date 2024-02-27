@@ -7,6 +7,7 @@ import {StackNavigationProp} from '@react-navigation/stack';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import Envelope from '../../../assets/Icons/Mission/Envelope.svg';
 import MissionPlus from '../../../assets/Icons/Mission/Plus.svg';
+import Logo from '../../../assets/Icons/Etc/Logo.svg';
 
 export const MainScreen: React.FC = () => {
   const StackNavi =
@@ -23,7 +24,7 @@ export const MainScreen: React.FC = () => {
       {/* 미션  영역 */}
       {/* 미션 알림 */}
       <View className="top-28 items-center">
-        <Text className="text-[#3A3521] text-2xl font-bold">
+        <Text className="text-[#3A3521] text-[24px] font-bold font-NanumSquare ">
           새로운 미션이 도착했어요!
         </Text>
       </View>
@@ -46,10 +47,12 @@ export const MainScreen: React.FC = () => {
             text-[#3A3521]
             mt-10
             opacity-60
-            text-[16px]">
+            text-[16px] font-NanumSquare">
               편지를 눌러 미션을 확인해보세요
             </Text>
           </TouchableOpacity>
+
+          {/*           
           <TouchableOpacity
             className="flex-row mt-44 justify-center"
             onPress={() => StackNavi.navigate('suggestMission')}>
@@ -62,23 +65,27 @@ export const MainScreen: React.FC = () => {
             font-bold
             my-0.5      
             ml-1
+            font-NanumSquare
             ">
               미션 생성하기
             </Text>
-          </TouchableOpacity>
-          {/* 
+          </TouchableOpacity> */}
+
           <TouchableOpacity
-            className="bg-Quicksand mt-3 w-40 rounded-xl items-center "
+            className="flex-row mt-44 justify-center"
             onPress={() => StackNavi.navigate('submitMission')}>
             <Text
               className="
-            text-Pristine
-            text-3xl 
-            font-medium
-            my-1.5">
-              미션 제출
+            text-[#58533D]
+            text-[16px]
+            font-bold
+            my-0.5      
+            ml-1
+            font-NanumSquare
+            ">
+              미션 제출하기
             </Text>
-          </TouchableOpacity> */}
+          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>

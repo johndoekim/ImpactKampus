@@ -24,7 +24,13 @@ module.exports = {
         Quicksand: '#bca08d',
         MainBg: '#FFF8DC',
         AvatarBg: '#FFE16A',
+        MissionTextCol: '#89836C',
+        MissionCol: '#3A3521',
       },
+    },
+    fontFamily: {
+      NanumSquare: ['NanumSquareRoundR', 'sans-serif'],
+      Orbit: ['Orbit-Regular', 'sans-serif'],
     },
   },
   plugins: [],
