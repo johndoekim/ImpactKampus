@@ -1,79 +1,50 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 일상의 권태기를 탈출 시킬 사소한 미션 추천 서비스 포미 
 
-# Getting Started
+제한 시간이 있는 미션을 수행함으로써, 성취감을 얻고 이를 기록하며 자신을 돌아보는 서비스
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+---
 
-## Step 1: Start the Metro Server
+## 주요 기능
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+짧은 시간 내에 수행 할 수 있는 기본적인 시스템 미션을 부여
+유저 간 미션을 부여 할 수 있는 기능을 통해 재미를 기대
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### 미션 수락
+![미션수락](https://github.com/johndoekim/ImpactKampus/assets/127470168/81b164c6-f48e-4d03-8819-3f9263285f97)
 
-```bash
-# using npm
-npm start
+### 미션 부여
+![미션생성회전](https://github.com/johndoekim/ImpactKampus/assets/127470168/cdf6352f-ee92-4df0-84de-475c5d4e95b4)
 
-# OR using Yarn
-yarn start
-```
+### 미션 결과 제출
+![미션결과제출](https://github.com/johndoekim/ImpactKampus/assets/127470168/a7d1d4b3-e9f7-4fbe-91a6-3bb148a6d854)
 
-## Step 2: Start your Application
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
 
-```bash
-# using npm
-npm run android
+---
+참여인원 : 프론트엔드 1명, 백엔드 2명
 
-# OR using Yarn
-yarn android
-```
+---
 
-### For iOS
+프론트엔드 사용 기술
 
-```bash
-# using npm
-npm run ios
 
-# OR using Yarn
-yarn ios
-```
+📋 Languages
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+ 
+📚 Frameworks, Platforms and Libraries
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-## Step 3: Modifying your App
 
-Now that you have successfully run the app, let's modify it.
+📅 Work Management
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)
+![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+---
+작업 진행 기간
 
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## 2024.12.21 ~ 진행중 
